@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Your Portfolio</title>
 </head>
@@ -37,22 +38,45 @@
 
     <section id="portfolio" class="portfolio">
         <h2>Portfolio</h2>
-        <div class="portfolio-item">
-            <img src="img/img2.jpg" alt="Project 1">
-            <h3>Track-Align Plug-in</h3>
-            <p>This plugin is designed to seamlessly integrate with any Digital Audio Workstation (DAW). 
-                It aligns the timing of one or more vocal and instrument tracks, ensuring perfect synchronization. 
-                Additionally, it can match the pitch across similar tracks, enhancing the overall harmony of the mix. 
-                The project is set to be implemented in C++, leveraging its efficiency and performance.</p>
-        </div>
-        <div class="portfolio-item">
-            <img src="img/img3.jpg" alt="Project 2">
-            <h3>Room Reverb Analyzer</h3>
-            <p>This application analyzes the reverb characteristics of a listener's room. 
-                By using a ribbon microphone and measuring the room's height, length, and width, 
-                it assesses how sound bounces within the space. 
-                This analysis assists users in optimizing their room's acoustics for superior sound engineering and audio mixing. 
-                The project will be developed in C++, ensuring robust performance and precision.</p>
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+        
+            <div id="slides">
+                <div id="overflow">
+                    <div class="inner">
+                        <div class="slide slide_1">
+                            <div class="slide-content">
+                                <img src="img/img2.jpg" alt="Project 1">
+                                <h3>Track-Align Plug-in</h3>
+                                <p>This plugin is designed to seamlessly integrate with any Digital Audio Workstation (DAW). 
+                                    It aligns the timing of one or more vocal and instrument tracks, ensuring perfect synchronization. 
+                                    Additionally, it can match the pitch across similar tracks, enhancing the overall harmony of the mix. 
+                                    The project is set to be implemented in C++, leveraging its efficiency and performance.</p>
+                            </div> 
+                        </div>
+                        <div class="slide slide_2">
+                            <div class="slide-content">
+                                <img src="img/img3.jpg" alt="Project 2">
+                                <h3>Room Reverb Analyzer</h3>
+                                <p>This application analyzes the reverb characteristics of a listener's room. 
+                                    By using a ribbon microphone and measuring the room's height, length, and width, 
+                                    it assesses how sound bounces within the space. 
+                                    This analysis assists users in optimizing their room's acoustics for superior sound engineering and audio mixing. 
+                                    The project will be developed in C++, ensuring robust performance and precision.</p>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div id="controls">
+                    <label for="slide2"><i class="fas fa-chevron-left"></i></label>
+                    <label for="slide1"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                <div id="bullets">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                </div>
+            </div>
         </div>
         <!-- Add more portfolio items as needed -->
     </section>
